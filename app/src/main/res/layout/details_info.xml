@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/background_rating_margin_bottom"
+        app:layout_constraintBottom_toTopOf="@+id/details_activity_overview_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/uiBackgroundColor" />
+
+    <RatingBar
+        android:id="@+id/details_activity_rating_bar"
+        style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/rating_bar_margin"
+        android:layout_marginStart="@dimen/rating_bar_margin"
+        android:layout_marginTop="@dimen/rating_bar_margin"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barrier2" />
+
+    <TextView
+        android:id="@+id/details_activity_rating_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/rating_label_margin"
+        android:layout_marginStart="@dimen/rating_label_margin"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_activity_rating_bar"
+        tools:text="Average Rating: 6.8" />
+
+    <TextView
+        android:id="@+id/details_activity_overview_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/synopsis_label_margin"
+        android:layout_marginTop="@dimen/synopsis_label_margin"
+        android:text="@string/synopsis"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_activity_rating_tv" />
+
+    <TextView
+        android:id="@+id/details_activity_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/synopsis_margin_x"
+        android:layout_marginStart="@dimen/synopsis_margin_x"
+        android:layout_marginTop="@dimen/synopsis_margin_top"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_activity_overview_label"
+        tools:text="synopsis" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/details_activity_is_favorite_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/favorite_fab_margin"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/details_activity_rating_tv"
+        app:srcCompat="@drawable/ic_star_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/details_activity_is_not_favorite_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/favorite_fab_margin"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimaryLight"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/details_activity_rating_tv"
+        app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+</android.support.constraint.ConstraintLayout>

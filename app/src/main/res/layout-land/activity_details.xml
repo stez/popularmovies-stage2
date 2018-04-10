@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uiBackgroundColorAlt"
+    tools:context="it.and.stez78.popularmovies.app.DetailsActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/details_activity_is_not_favorite_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/favorite_fab_land_margin_bottom"
+        android:layout_marginEnd="@dimen/favorite_fab_land_margin_x"
+        android:layout_marginStart="@dimen/favorite_fab_land_margin_x"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimaryLight"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/details_activity_poster_image"
+        app:layout_constraintStart_toStartOf="@+id/details_activity_poster_image"
+        app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+    <ImageView
+        android:id="@+id/details_activity_background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimary" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/details_activity_is_favorite_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/favorite_fab_land_margin_bottom"
+        android:layout_marginEnd="@dimen/favorite_fab_land_margin_x"
+        android:layout_marginStart="@dimen/favorite_fab_land_margin_x"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/details_activity_poster_image"
+        app:layout_constraintStart_toStartOf="@+id/details_activity_poster_image"
+        app:srcCompat="@drawable/ic_star_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/uiBackgroundColorAltTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/details_activity_poster_image"
+        android:layout_width="@dimen/detail_poster_width"
+        android:layout_height="@dimen/detail_poster_height"
+        android:layout_marginBottom="@dimen/detail_poster_land_margin_bottom"
+        android:layout_marginStart="@dimen/detail_poster_land_margin_start"
+        android:layout_marginTop="@dimen/detail_poster_land_margin_top"
+        android:background="@drawable/border"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/detail_land_nested_scrollview_margin"
+        android:layout_marginStart="@dimen/detail_land_nested_scrollview_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/details_activity_background_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/details_activity_poster_image"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/details_land_title_margin_end"
+                android:layout_marginStart="@dimen/details_content_margin_start"
+                android:layout_marginTop="@dimen/details_land_title_margin_top"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/details_activity_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_content_margin_start"
+                android:textColor="@color/backgroundColorDark"
+                tools:text="release" />
+
+            <RatingBar
+                android:id="@+id/details_activity_rating_bar"
+                style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/details_content_margin_start"
+                android:layout_marginTop="@dimen/details_rating_bar_land_margin_top"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/details_activity_rating_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_content_margin_start"
+
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                tools:text="Average Rating: 6.8" />
+
+            <TextView
+                android:id="@+id/details_activity_overview_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_content_margin_start"
+                android:layout_marginTop="@dimen/details_activity_overview_label_margin_top"
+                android:text="@string/synopsis"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/details_activity_overview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/details_content_margin_start"
+                android:textColor="@android:color/white"
+                tools:text="Trama" />
+
+            <include
+                android:id="@+id/details_trailers"
+                layout="@layout/details_trailers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/details_reviews"
+                layout="@layout/details_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/details_activity_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/details_land_guideline" />
+
+</android.support.constraint.ConstraintLayout>

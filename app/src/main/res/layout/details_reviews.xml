@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/details_activity_reviews_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/reviews_label_margin_start"
+        android:layout_marginTop="@dimen/reviews_label_margin_top"
+        android:text="@string/reviews"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_activity_trailer_rv" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_activity_reviews_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/reviews_recycler_view_margin"
+        android:layout_marginStart="@dimen/reviews_recycler_view_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_activity_reviews_label"
+        tools:listitem="@layout/list_element_review" />
+
+</merge>

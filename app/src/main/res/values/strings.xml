@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="average_rating">Average rating:\u0020 %1$.2f</string>
+    <string name="internet_connection_error_msg">Oops .. something went wrong! Maybe check your internet connection?</string>
+    <string name="sorted_by">Sorted by</string>
+    <string name="most_popular_label">Most Popular</string>
+    <string name="top_rated_label">Top Rated</string>
+    <string name="refresh">Refresh</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="trailers">Trailers</string>
+    <string name="reviews">Reviews</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="favorite_removed">Movie %1$s removed from favorites!</string>
+    <string name="favorite_added">Movie %1$s is now a favorite!</string>
+    <string name="loading_trailers_failed">Something went wrong: cannot load trailers.. check your internet connection!</string>
+    <string name="load_reviews_failed">Something went wrong: cannot load reviews.. check your internet connection!</string>
+</resources>
