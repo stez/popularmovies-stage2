@@ -41,10 +41,10 @@ Place your API key in the `gradle.properties` file such as:
 **API_KEY="YourApiKey"**
 
     
-![alt text](https://github.com/stez/popularmovies-stage2/blob/develop/device-main.png)
+![alt text](https://github.com/stez/popularmovies-stage2/blob/master/device-main.png)
 
-![alt text](https://github.com/stez/popularmovies-stage2/blob/develop/device-detail.png)
+![alt text](https://github.com/stez/popularmovies-stage2/blob/master/device-detail.png)
 
-![alt text](https://github.com/stez/popularmovies-stage2/blob/develop/device-detail-land.png)
+![alt text](https://github.com/stez/popularmovies-stage2/blob/master/device-detail-land.png)
 
 App Icon taken from <a href="http://www.freepik.com" title="Freepik">Freepik</a> - <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> - licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
